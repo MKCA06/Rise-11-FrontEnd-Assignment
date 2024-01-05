@@ -1,3 +1,4 @@
+'use client'
 import { MoreVertical } from "lucide-react";
 import React, { useState } from "react";
 import Chart from "react-apexcharts";

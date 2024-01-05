@@ -19,8 +19,7 @@ const statusColorMap: any = {
   paused: "danger",
   vacation: "warning",
 };
-
-export default function CourseStatus() {
+ function CourseStatus() {
   const renderCell = useCallback((user: any, columnKey: any) => {
     const cellValue = user[columnKey];
 
@@ -98,3 +97,6 @@ export default function CourseStatus() {
     </Table>
   );
 }
+
+
+export default CourseStatus

@@ -3,10 +3,9 @@
 import Chart from "react-apexcharts";
 
 import React, { useState } from "react";
-//https://freepngimg.com/save/40041-graph-image-png-file-hd/960x640
 function Impress(props: any) {
   let { name, number }: any = props;
-  const [state, setState] = useState<any>({
+  const state = {
     options: {
       grid: {
         show: false,
@@ -14,7 +13,7 @@ function Impress(props: any) {
       chart: {
         id: "line",
         toolbar: {
-          autoSelected: "pan",
+          autoSelected: undefined,
           show: false,
         },
       },
@@ -58,17 +57,16 @@ function Impress(props: any) {
           "Sep",
           "Oct",
           "Nov",
-          "Dec",
         ],
       },
     },
     series: [
       {
         name: "Course Sale",
-        data: [0, 200, , 100, 235, 140, 100, 230, 250, 270],
+        data: [0, 200, 150, 100, 235, 140, 100, 230, 250, 270],
       },
     ],
-  });
+  };
   return (
     <>
       <div className="flex justify-between items-center my-2 border-l-2 px-4 border-l-purple-600">
