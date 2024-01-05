@@ -1,21 +1,89 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React from "react";
+import Chart from "react-apexcharts";
+
+import React, { useState } from "react";
 //https://freepngimg.com/save/40041-graph-image-png-file-hd/960x640
 function Impress(props: any) {
   let { name, number }: any = props;
+  const [state, setState] = useState<any>({
+    options: {
+      grid: {
+        show: false,
+      },
+      chart: {
+        id: "line",
+        toolbar: {
+          autoSelected: "pan",
+          show: false,
+        },
+      },
+      stoke: {
+        width: 1,
+      },
+      dataLabels: {
+        enabled: false,
+      },
+      yaxis: {
+        show: false,
+        labels: {
+          show: false,
+        },
+        axisBorder: {
+          show: false,
+        },
+        axisTicks: {
+          show: false,
+        },
+      },
+      xaxis: {
+        show: false,
+        labels: {
+          show: false,
+        },
+        axisBorder: {
+          show: false,
+        },
+        axisTicks: {
+          show: false,
+        },
+        categories: [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "June",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ],
+      },
+    },
+    series: [
+      {
+        name: "Course Sale",
+        data: [0, 200, , 100, 235, 140, 100, 230, 250, 270],
+      },
+    ],
+  });
   return (
     <>
-      <div className="flex my-2 border-l-2 pl-2 border-l-purple-600">
+      <div className="flex justify-between items-center my-2 border-l-2 px-4 border-l-purple-600">
         <div>
           <h4 className="font-semibold mb-4">{name}</h4>
           <span className="mt-4 font-semibold">{number}</span>
         </div>
         <div className=" flex items-center justify-center">
-          <img
-            className="h-20 w-20"
-            src="https://freepngimg.com/save/40041-graph-image-png-file-hd/960x640"
-            alt=""
+          <Chart
+            className=""
+            height="100"
+            width="160"
+            type="area"
+            options={state.options}
+            series={state.series}
           />
         </div>
       </div>
@@ -43,7 +111,7 @@ function Impression() {
   ];
   return (
     <>
-      <div className="grid mt-10 md:grid-cols-4 grid-cols-2">
+      <div className="grid mt-10  lg:grid-cols-4  grid-cols-1 sm:grid-cols-2">
         {data.map((doc: any) => {
           return (
             <>

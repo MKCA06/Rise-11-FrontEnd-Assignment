@@ -84,7 +84,7 @@ function Topbar() {
       <NavbarContent className="hidden md:flex gap-4" justify="start">
         <NavbarItem>
           <Input
-            placeholder="you@example.com"
+            placeholder="Search here"
             labelPlacement="outside"
             startContent={
               <Search className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
@@ -94,9 +94,13 @@ function Topbar() {
       </NavbarContent>
       <NavbarContent className="md:flex hidden gap-8" justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Button color="primary" variant="bordered" startContent={<Upload />}>
+          <div
+            className="flex flex-row bg-yellow-600 px-2 py-2 text-white"
+            color="primary"
+          >
+            <Upload className="mr-2" />
             New Upload
-          </Button>
+          </div>
         </NavbarItem>
         <NavbarItem>
           <Badge content="5" size="sm" color="primary">
@@ -108,6 +112,20 @@ function Topbar() {
         </NavbarItem>
         <NavbarItem>
           <Activity />
+        </NavbarItem>
+        <NavbarItem>
+          <div className="flex">
+            <div className="mr-2 flex flex-col justify-center items-center">
+              <h1 className="font-semibold">TheMad</h1>
+              <span className="text-gray-600 text-sm">Designer</span>
+            </div>
+            <div>
+              <Avatar
+                radius="sm"
+                src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+              />
+            </div>
+          </div>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
