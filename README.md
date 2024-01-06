@@ -1,7 +1,7 @@
 <!-- Header Section -->
 <p align="center">
   <!-- Replace with your logo or image URL -->
-  <img src="https://drive.google.com/file/d/1Uf6nCrYLrN7YPUylN_qvui5sxq82OMPV/view?usp=sharing" alt="Your Company Logo">
+  ![Uploading Rise11.jpg…]()
 </p>
 
 # React Dashboard Assignment
