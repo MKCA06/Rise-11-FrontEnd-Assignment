@@ -1,9 +1,8 @@
 <!-- Header Section -->
 <p align="center">
   <!-- Replace with your logo or image URL -->
-  ![Uploading Rise11.jpg…]()
+  ![Uploading Rise11.jpg…](https://drive.google.com/file/d/1Uf6nCrYLrN7YPUylN_qvui5sxq82OMPV/view)
 </p>
-![Uploading Rise11.jpg…]()
 # React Dashboard Assignment
 
 Welcome to the React Dashboard Assignment repository! This project is a hands-on exercise in recreating a dashboard design using React.js. We are excited to see your implementation and how you bring the given dashboard design to life.
