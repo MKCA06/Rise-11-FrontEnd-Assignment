@@ -41,3 +41,6 @@ We look forward to reviewing your implementation of the React Dashboard Assignme
 
 <!-- Include any additional information or instructions as needed -->
 
+## Required Dashboard 
+![Uploading ezz.jpg…]()
+
